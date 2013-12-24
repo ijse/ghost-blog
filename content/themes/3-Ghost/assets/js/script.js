@@ -101,6 +101,11 @@ var CodePenEmbed={width:"100%",init:function(){this.showCodePenEmbeds(),this.lis
 
 // Re-run scripts for post content after pjax
 function afterPjax() {
+
+  $('#search-input').quicksearch('#pl__container a', {
+    selector: '.pl__title'
+  });
+
   // Open links in new tab
   $('#post__content a').attr('target','_blank');
 
