@@ -17,6 +17,7 @@
   font-family: "fontello";
   speak: none;
   font-variant: normal;
+  font-style: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -132,7 +133,7 @@ a {
   list-style: none; }
 
 .tags__li {
-  padding: 12px 35px 9px;
+  padding: 12px 15px 9px;
   border-top: 1px solid #525965;
   border-bottom: 1px solid #3c4149;
   cursor: pointer; }
@@ -199,6 +200,10 @@ a {
 }
 #icon-github:before {
     content: "\e807";
+}
+#icon-linkout:before {
+  float: right;
+  content: "\e809";
 }
 
 .tags-btn {
