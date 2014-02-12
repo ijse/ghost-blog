@@ -28,7 +28,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+                filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
         },
@@ -46,15 +46,15 @@ config = {
     production: {
         url: 'http://www.ijser.cn',
         mail: {
-		transport: 'SMTP',
-		options: {
-			service: 'Mailgun',
-			auth: {
-				user: 'postmaster@sandbox17910.mailgun.org',
-				pass: '590knw5r8q47'
-			}
-		}
-	},
+			transport: 'SMTP',
+			options: {
+				service: 'Mailgun',
+				auth: {
+					user: 'postmaster@sandbox17910.mailgun.org',
+					pass: '590knw5r8q47'
+				}
+			}	 
+		},
         database: {
             client: 'sqlite3',
             connection: {
